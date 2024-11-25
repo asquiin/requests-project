@@ -2,11 +2,13 @@
 
 <template>
   <div class="login-page w-full h-screen bg-red justify-center align-center">
+
     <v-card variant="flat" color="white" width="400px" class="rounded-lg">
+      <!-- <v-row class="w-[700px] bg-[#44A248]"> Авторизация </v-row> -->
       <v-col>
       <v-list-item class="mb-0 pb-0" :style="{color: '#50B053'}"> Логин или Телефон </v-list-item>
-        <v-text-field placeholder="Телефон" variant="underlined" />
-        <v-text-field placeholder="Пароль" variant="underlined" />
+        <v-text-field prepend-inner-icon="mdi-phone" placeholder="Телефон" variant="underlined" />
+        <v-text-field prepend-inner-icon="mdi-lock"  placeholder="Пароль" variant="underlined" />
         <v-card-actions class="flex justify-center">
           <v-btn
             text="Войти"
